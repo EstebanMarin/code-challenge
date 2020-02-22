@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- '12'
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script:
+- yarn test
+before_deploy:
+- yarn run build
+deploy:
+  provider: s3
+  access_key_id: AKIA3KO3GM52C7UDM63U
+  secret_access_key:
+    secure: qOn+drdyGA+5ScA3VKoBkCVM9F2NN0mBOJQQ9KrD9zG9TuuRkpyzxh12hoRcLZLhZKvAvxwRT348tCQ53t0upo4K7fykU/dQyEq3n60CW7AiOLhoJ60hXllhIjc9OxJk9PO8ZW+OMXuxBFMDabukFXxcFnRGTiGi8Fpk/EfB/73A7gG9FwvWMtm5oXS++4X85+NGjgSkdiJyAYn67mqz5P1Ncb/hnqBRhvAA9SYIElD8jNWdWc3tBOyYi7d7uJLKg8xP+K6QzudG5kDC1+v7Dq4PcO1pwisp5I8gla7KgKx06wPmEaD7VtxfpcqypLRsDOE8y8NkDyOmJA0jpX05A/elWgVgEWS0cwiIHDZfyvJ6YEVRZO5jQ9pzh8gzzt3jcomBrQDxGKZ4rRga7YMLO9h2+wKr7DKxJXYkitMEIyg/TrqiJEgS7qkXDimy39N8qnHnct8CnO9pIA+egAHTmcQON1c8Pv8f6loX1hp3u7TYZDBpxrw/BTE/HtsUbtnawnHtPShxfPRRBQ1J58v5HqyouDoUFwDXDPVA3eWQjNK40pZJoPaRoQEnxsAInG6C+bUA8Sy6CCpP2N+sn+Dvi75eZkhr/gsCL4flEo3drPFolzXw5Orl9eTS6tR0cwLdnN9JAKJsYycnu5k5emkxiHLh86hNU3A5woveo/+oEwc=
+  bucket: emcodingchallenge.net
+  local-dir: build
+  acl: bucket_owner_full_control
+  on:
+    repo: EstebanMarin/code-challenge
