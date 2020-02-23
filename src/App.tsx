@@ -1,12 +1,20 @@
 import React from 'react';
-import Header from './components/Header'
+import { Header, Footer } from './components'
 import './App.css';
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyles = createGlobalStyle`
+`
 
 function App() {
   return (
+    <>
+      <GlobalStyles />
       <div className="App">
-          <Header/>
-    </div>
+        <Header text="hello" />
+        <Footer text="hello" />
+      </div>
+    </>
   );
 }
 

@@ -1,10 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 
-function Header() {
+const StyledHeader = styled.header`
+    background-color: black
+`
+
+interface HeaderProps {
+  text: string
+}
+
+function Header({ text }: HeaderProps) {
   return (
+    <StyledHeader>
       <header className="header">
-          Adidas
-    </header>
+        {`${text}`}
+      </header>
+    </StyledHeader>
   );
 }
 

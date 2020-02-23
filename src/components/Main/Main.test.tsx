@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Header from './index'
+import Main from './index'
 
 test('Renders correctly the header', () => {
-  const test = render(<Header text="Hello" />)
+  const test = render(<Main />)
   expect(test).toMatchSnapshot()
 })
