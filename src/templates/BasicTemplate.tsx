@@ -1,6 +1,7 @@
 import React from "react";
-import { Header, Footer, Main } from "../components";
+import { Header, Footer, Main, Toolbar } from "../components";
 import { media } from "../utilities/mediaQueries";
+import Navbar from '../containers/Navbar'
 import styled from "styled-components";
 
 const PageContainer = styled.div`
@@ -26,7 +27,10 @@ const BasicTemplate = ({ sideBar, container }: BasicTemplateProps) => {
   return (
     <div className="page-container">
       <PageContainer>
-        <Header>Header</Header>
+        <Header>
+          <Navbar />
+        </Header>
+        <Toolbar />
         <Main sideBar={sideBar} container={container} />
         <Footer>Footer</Footer>
       </PageContainer>

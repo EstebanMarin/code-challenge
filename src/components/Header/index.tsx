@@ -1,14 +1,21 @@
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
+import styled from 'styled-components'
 
 interface HeaderProps {
   children: ReactNode
 }
 
+const StyledHeader = styled.div`
+   background-color: black;
+    height: 100px;
+`
+
+
 function Header({ children }: HeaderProps) {
   return (
-    <header className="header">
-      {children}
-    </header>
+    <StyledHeader >
+        {children}
+    </StyledHeader>
   );
 }
 

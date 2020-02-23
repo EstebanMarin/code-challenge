@@ -6,14 +6,28 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm jyoZsQ"
-      />
+        class="sc-AxjAm huKben"
+      >
+        <nav>
+          <img
+            alt="not-Working"
+            src="Toolbar.png"
+          />
+        </nav>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm jyoZsQ"
-    />
+      class="sc-AxjAm huKben"
+    >
+      <nav>
+        <img
+          alt="not-Working"
+          src="Toolbar.png"
+        />
+      </nav>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
