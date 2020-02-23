@@ -5,7 +5,7 @@ const StyledMain = styled.main`
 `
 
 interface MainProps {
-    children: JSX.Element[]
+    children: React.ReactNode
 }
 
 function Main({ children }: MainProps) {

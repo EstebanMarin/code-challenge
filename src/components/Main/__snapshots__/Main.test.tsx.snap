@@ -10,7 +10,11 @@ Object {
       >
         <main
           class="main"
-        />
+        >
+          <p>
+            hello
+          </p>
+        </main>
       </main>
     </div>
   </body>,
@@ -20,7 +24,11 @@ Object {
     >
       <main
         class="main"
-      />
+      >
+        <p>
+          hello
+        </p>
+      </main>
     </main>
   </div>,
   "debug": [Function],
