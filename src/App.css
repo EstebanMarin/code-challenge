@@ -1,3 +1,7 @@
+@import '~@adidas/yarn-design-system/dist/yarn.css';
+@import '~@adidas/yarn-design-system/dist/yarn-icon.css';
+@import '~@adidas/yarn-design-system/dist/yarn-logo.css';
+
 .App {
   text-align: center;
 }
