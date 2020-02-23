@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 import navImage from './assets/nav.png'
 
@@ -13,9 +13,7 @@ const CenterNav = styled.div`
 function Navbar(): JSX.Element {
   return (
     <CenterNav>
-      <nav>
-        <img alt="not-Working" src={navImage} />
-      </nav>
+      <img alt="not-Working" src={navImage} />
     </CenterNav>
   );
 }
