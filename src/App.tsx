@@ -4,7 +4,6 @@ import './App.css';
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-
 `
 interface BasicTemplateProps {
   children: React.ReactNode
