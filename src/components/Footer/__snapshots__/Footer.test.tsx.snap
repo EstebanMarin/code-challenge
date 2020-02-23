@@ -6,26 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <footer
-        class="sc-AxjAm pZSJy"
-      >
-        <footer
-          class="footer"
-        >
-          Hello
-        </footer>
-      </footer>
+        class="footer"
+      />
     </div>
   </body>,
   "container": <div>
     <footer
-      class="sc-AxjAm pZSJy"
-    >
-      <footer
-        class="footer"
-      >
-        Hello
-      </footer>
-    </footer>
+      class="footer"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

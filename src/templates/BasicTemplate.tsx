@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer, Main, Toolbar } from "../components";
+import { Header, Main, Toolbar } from "../components";
 import { media } from "../utilities/mediaQueries";
 import Navbar from '../containers/Navbar'
 import styled from "styled-components";
@@ -32,7 +32,6 @@ const BasicTemplate = ({ sideBar, container }: BasicTemplateProps) => {
         </Header>
         <Toolbar />
         <Main sideBar={sideBar} container={container} />
-        <Footer>Footer</Footer>
       </PageContainer>
     </div>
   );
