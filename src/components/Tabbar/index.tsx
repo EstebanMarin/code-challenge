@@ -7,10 +7,11 @@ const StyledTabbar = styled.div`
 interface TabbarProps {
 }
 
-function Tabbar({ }: TabbarProps) {
+// eslint-disable-next-line
+function Tabbar({ }: TabbarProps): React.ReactNode {
   return (
     <StyledTabbar>
-      <div className="tabbar"></div>
+      <div className="tabbar" />
     </StyledTabbar>
   );
 }

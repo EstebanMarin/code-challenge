@@ -1,20 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledMain = styled.main`
-`
 
 interface MainProps {
-    children: React.ReactNode
+  children: React.ReactNode
 }
 
-function Main({ children }: MainProps) {
+function Main({ children }: MainProps): JSX.Element {
   return (
-    <StyledMain>
-        <main className="main" >
-            {children}
-        </main>
-    </StyledMain>
+    <div className="pageContainer">
+      <main className="main">
+        {children}
+        <div >Side Bar
+      </div>
+      </main>
+
+    </div>
   );
 }
 
