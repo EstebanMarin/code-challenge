@@ -11,11 +11,11 @@ interface BasicTemplateProps {
 }
 const BasicTemplate = ({ children }: BasicTemplateProps) => {
   return (
-    <>
+    <div>
       <Header text="hello" />
       <Main>{children}</Main>
       <Footer text="hello" />
-    </>
+    </div>
   )
 }
 
@@ -24,8 +24,8 @@ function App() {
     <>
       <GlobalStyles />
       <div className="App">
-          <BasicTemplate>
-              Hello
+        <BasicTemplate>
+          Hello
           </BasicTemplate>
       </div>
     </>
