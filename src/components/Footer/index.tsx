@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 interface FooterProps {
-  text: string
+  children: ReactNode
 }
 
-function Footer({ text }: FooterProps) {
+function Footer({ children }: FooterProps) {
   return (
-      <footer className="footer">
-        {`${text}`}
-      </footer>
+    <footer className="footer">
+      {children}
+    </footer>
   );
 }
 

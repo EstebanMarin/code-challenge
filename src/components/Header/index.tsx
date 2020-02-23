@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 
 interface HeaderProps {
-  text: string
+  children: ReactNode
 }
 
-function Header({ text }: HeaderProps) {
+function Header({ children }: HeaderProps) {
   return (
     <header className="header">
-      {`${text}`}
+      {children}
     </header>
   );
 }

@@ -1,19 +1,26 @@
 import React from 'react';
+import styled from 'styled-components'
 
+const StyledDiv = styled.div`
+    flex-grow: 1;
+`
 interface MainProps {
-  children: React.ReactNode
+  sideBar: React.ReactNode;
+  container: React.ReactNode;
 }
 
-function Main({ children }: MainProps): JSX.Element {
+function Main({ sideBar, container }: MainProps): JSX.Element {
   return (
-    <div className="pageContainer">
+    <StyledDiv>
       <main className="main">
-        {children}
-        <div >Side Bar
-      </div>
+        <div className="container">
+          {container}
+        </div>
+        <div className="sidebar">
+          {sideBar}
+        </div>
       </main>
-
-    </div>
+    </StyledDiv>
   );
 }
 
