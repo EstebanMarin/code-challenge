@@ -18,15 +18,16 @@ const PageContainer = styled.div`
 `;
 
 interface BasicTemplateProps {
-  children: React.ReactNode;
+  sideBar: React.ReactNode;
+  container: React.ReactNode;
 }
 
-const BasicTemplate = ({ children }: BasicTemplateProps) => {
+const BasicTemplate = ({ sideBar, container }: BasicTemplateProps) => {
   return (
     <div className="page-container">
       <PageContainer>
         <Header>Header</Header>
-        <Main sideBar="sidebar" container="container" />
+        <Main sideBar={sideBar} container={container} />
         <Footer>Footer</Footer>
       </PageContainer>
     </div>

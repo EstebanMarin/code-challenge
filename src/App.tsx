@@ -11,9 +11,7 @@ function App() {
     <>
       <GlobalStyles />
       <div className="App">
-          <BasicTemplate>
-              Hello From app
-          </BasicTemplate>
+        <BasicTemplate sideBar="side-bar" container="container" />
       </div>
     </>
   );
