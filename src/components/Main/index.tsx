@@ -12,7 +12,7 @@ const CenterChildren = styled.div`
 `
 
 interface MainProps {
-  sideBar: React.ReactNode;
+  sideBar?: React.ReactNode;
   container: React.ReactNode;
 }
 

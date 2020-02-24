@@ -1,0 +1,20 @@
+* AWS
+** Prodcuts used (free tier - domain)
+   - Route 53
+   - S3
+   - IAM
+   - Certificate Manager
+   - Almost Cloud Front
+** CI/CD
+*** Configuration
+    https://docs.travis-ci.com/user/deployment/s3/ 
+*** test
+   =yarn test= 
+*** Deployment using Travis
+    https://travis-ci.org/EstebanMarin/code-challenge
+** Create React-app
+*** Using YARN ?
+    - https://github.com/adidas/adidas-yarn-design-system
+    - CORS issue https://create-react-app.dev/docs/proxying-api-requests-in-development/
+    - Composing Views
+    - Composing Logic

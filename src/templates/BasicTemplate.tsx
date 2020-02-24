@@ -19,7 +19,7 @@ const PageContainer = styled.div`
 `;
 
 interface BasicTemplateProps {
-  sideBar: React.ReactNode;
+  sideBar?: React.ReactNode;
   container: React.ReactNode;
 }
 

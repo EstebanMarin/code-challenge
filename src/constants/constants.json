@@ -1,0 +1,85 @@
+{
+    "basketId": "6b1dac07809cdfd24223010e16",
+    "currency": "USD",
+    "modifiedDate": "2020-02-24T20:19:09.059Z",
+    "pricing": {
+        "total": 120,
+        "baseTotal": 120,
+        "totalTax": 0,
+        "productTotal": 120,
+        "productTotalBeforeDiscounts": 120,
+        "productTotalBeforeOrderDiscounts": 120,
+        "shippingTotal": 0,
+        "shippingBaseTotal": 0
+    },
+    "resourceState": "a75b130dd47706ab19030a7d108f1e302ed9697276521c78598c8ed6050ed441",
+    "taxationPolicy": "net",
+    "totalProductCount": 1,
+    "messageList": [
+        {
+            "type": "PaymentMethodRequired"
+        },
+        {
+            "type": "BillingAddressRequired"
+        },
+        {
+            "type": "ShippingAddressRequired",
+            "details": {
+                "shipmentId": "me"
+            }
+        }
+    ],
+    "shipmentList": [
+        {
+            "shipmentId": "me",
+            "shipmentType": "inline",
+            "productLineItemList": [
+                {
+                    "itemId": "1876428f9c602bdf16ec6c2404",
+                    "productId": "G28859_660",
+                    "productName": "Adizero Boston 8 Shoes",
+                    "canonicalProductName": "adizero-boston-8-shoes",
+                    "productImage": "https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/6b8320c5b7464865be7aaa6b00f5cdbd_9366/G28859_660_01_standard.jpg",
+                    "quantity": 1,
+                    "pricing": {
+                        "baseUnitPrice": 120,
+                        "unitPrice": 120,
+                        "basePrice": 120,
+                        "price": 120,
+                        "priceAfterAllDiscounts": 120,
+                        "unitPriceWithoutTax": 120
+                    },
+                    "gender": "M",
+                    "color": "Collegiate Royal / Gold Metallic / Cloud White",
+                    "size": "10.5",
+                    "allowedActions": {
+                        "delete": true,
+                        "edit": true,
+                        "moveToWishlist": true
+                    },
+                    "maxQuantityAllowed": 5,
+                    "isBonusProduct": false,
+                    "productType": "INLINE",
+                    "availableStock": 5,
+                    "isFlashProduct": false
+                }
+            ],
+            "shippingLineItem": {
+                "name": "Shipping",
+                "description": "3-5 Day Delivery",
+                "id": "2ndDay_Threshold_1",
+                "pricing": {
+                    "basePrice": 0,
+                    "price": 0
+                },
+                "carrierServiceName": "Fed Ex"
+            },
+            "shippingOnDate": ""
+        }
+    ],
+    "customer": {
+        "customerId": "abwpTWKYynhndgGgKZOwuJv3Gs",
+        "isLoggedIn": false
+    },
+    "freeShippingThreshold": 0
+}
