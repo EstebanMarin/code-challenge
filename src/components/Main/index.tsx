@@ -9,6 +9,19 @@ const CenterChildren = styled.div`
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+`
+const StyledContainer = styled.div`
+    width: 65%;
+    margin: 30px;
+`
+
+const StyledSidebar = styled.div`
+    width: 35%;
+    margin: 30px;
 `
 
 interface MainProps {
@@ -20,14 +33,8 @@ function Main({ sideBar, container }: MainProps): JSX.Element {
   return (
     <StyledDiv>
       <CenterChildren>
-        <main className="main">
-          <div className="sidebar">
-            {sideBar}
-          </div>
-          <div className="container">
-            {container}
-          </div>
-        </main>
+        <StyledContainer>{container}</StyledContainer>
+        <StyledSidebar>{sideBar}</StyledSidebar>
       </CenterChildren>
     </StyledDiv>
   );

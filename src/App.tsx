@@ -1,11 +1,10 @@
-import React from 'react';
-import './App.css';
-import Basket from  './containers/Basket'
-import { createGlobalStyle } from 'styled-components'
+import React from "react";
+import "./App.css";
+import Basket from "./containers/Basket";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-`
-
+`;
 
 function App() {
   return (

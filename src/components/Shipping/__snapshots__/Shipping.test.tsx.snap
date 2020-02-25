@@ -5,37 +5,17 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxjAm dNCJZQ"
-      >
-        <div
-          class="sc-AxirZ iYvmqQ"
-        >
-          <div
-            class="sc-AxiKw iYpDEZ"
-          />
-          <div
-            class="sc-AxhCb kKJzis"
-          />
-        </div>
-      </div>
+      <img
+        class="sc-AxjAm hYCzZN"
+        src="shipping.png"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxjAm dNCJZQ"
-    >
-      <div
-        class="sc-AxirZ iYvmqQ"
-      >
-        <div
-          class="sc-AxiKw iYpDEZ"
-        />
-        <div
-          class="sc-AxhCb kKJzis"
-        />
-      </div>
-    </div>
+    <img
+      class="sc-AxjAm hYCzZN"
+      src="shipping.png"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

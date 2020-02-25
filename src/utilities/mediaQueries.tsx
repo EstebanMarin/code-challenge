@@ -1,8 +1,8 @@
 interface MediaQuery {
-    custom: (maxWidth: number) => string;
-    desktop: string;
-    tablet: string;
-    phone: string;
+  custom: (maxWidth: number) => string;
+  desktop: string;
+  tablet: string;
+  phone: string;
 }
 
 const customMediaQuery = (maxWidth: number) =>
@@ -12,5 +12,5 @@ export const media: MediaQuery = {
   custom: customMediaQuery,
   desktop: customMediaQuery(922),
   tablet: customMediaQuery(768),
-  phone: customMediaQuery(576),
+  phone: customMediaQuery(576)
 };
