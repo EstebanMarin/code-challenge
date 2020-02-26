@@ -1,6 +1,7 @@
-import React, { useReducer, useEffect } from 'react'
+import { useReducer, useEffect } from 'react'
 import token from '../../constants/token'
 import data from '../../constants/constants.json'
+import { Data } from './dataType'
 
 const path = `https://www.adidas.com/`
 const basketUrl = `api/checkout/baskets/`
@@ -19,11 +20,11 @@ const requestInit: RequestInit = {
 
 
 interface State {
-    data: any,
+  data: any,
 }
 
 export const initialState: State = {
-    data: {},
+  data: {},
 };
 
 export enum ActionTypes {
@@ -49,8 +50,8 @@ export function reducer(state: State, action: Action) {
 const useBasket = () => {
   const [basket, dispatch] = useReducer(reducer, initialState)
   useEffect(() => {
-      /* fetch(basket, requestInit).then(console.log); */
-      dispatch({ type: ActionTypes.setData, payload: data})
+    /* fetch(basket, requestInit).then(console.log); */
+    dispatch({ type: ActionTypes.setData, payload: data })
   }, [])
   return [basket, dispatch]
 }

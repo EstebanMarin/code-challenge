@@ -4,3 +4,5 @@ export { default as Main } from "./Main";
 export { default as Toolbar } from "./Toolbar";
 export { default as Shipping } from "./Shipping";
 export { default as Total } from "./Total";
+export { default as PayPalButton } from "./PayPalButton";
+export { default as CheckoutButton } from "./CheckoutButton";

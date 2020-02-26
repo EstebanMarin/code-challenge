@@ -1,5 +1,6 @@
 import React from 'react'
 import { Shipping, Total } from '../../components'
+import { PaymentLeft, Shoes } from '../../templates'
 import styled from 'styled-components'
 
 const StyledArticle = styled.article`
@@ -9,7 +10,8 @@ const Margin = styled.div`
     margin: 30px 0px;
 `
 
-const ProductDetails = (): React.ReactNode => {
+const ProductDetails = (basket: any): React.ReactNode => {
+
   return (
     <StyledArticle>
       <Margin>
@@ -18,12 +20,8 @@ const ProductDetails = (): React.ReactNode => {
       <Margin>
         <Total amount={180} items={1} />
       </Margin>
-      <div>
-        shoes
-    </div>
-      <div>
-        payment
-    </div>
+      <Shoes />
+    <PaymentLeft />
       <Shipping />
     </StyledArticle>
   )
