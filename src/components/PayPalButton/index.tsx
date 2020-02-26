@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import PayPal from './assets/PayPalButton.png'
+import PayPal from './assets/icon-paypal-logo.svg'
 import Arrow from './assets/Arrow.png'
 
 const StyledButton = styled.button`
@@ -14,7 +14,7 @@ const FlexContainer = styled.div`
 `
 
 const StyledImg = styled.img`
-    height: 30px;
+    height: 25px;
     margin: 0px 0px;
 `
 

@@ -16,12 +16,12 @@ const CenterChildren = styled.div`
 `
 const StyledContainer = styled.div`
     width: 50%;
-    margin: 30px 30px 0px 320px;
+    margin: 15px 30px 0px 150px;
 `
 
 const StyledSidebar = styled.div`
     width: 50%;
-    margin: 30px 70px;
+    margin: 15px 50px;
 `
 
 interface MainProps {

@@ -6,3 +6,6 @@ export { default as Shipping } from "./Shipping";
 export { default as Total } from "./Total";
 export { default as PayPalButton } from "./PayPalButton";
 export { default as CheckoutButton } from "./CheckoutButton";
+export { default as Details } from "./Details";
+export { default as DetailsRight } from "./DetailsRight";
+export { default as Icons } from "./Icons";
