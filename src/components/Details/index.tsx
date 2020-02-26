@@ -7,10 +7,13 @@ const FlexboxContainerNamePrice = styled.div`
     justify-content: space-between;
     width: 270px;
 `
+const DetailsMargin = styled.div`
+   margin: 20px 0px 0px 5px 
+`
 
 const Details = () => {
   return (
-    <div>
+    <DetailsMargin>
       <FlexboxContainerNamePrice>
         <p>SUPER START SHOES</p>
         <p>$80.00</p>
@@ -24,7 +27,7 @@ const Details = () => {
       <p>
         QTY: 1
 </p>
-    </div>
+    </DetailsMargin>
   )
 }
 

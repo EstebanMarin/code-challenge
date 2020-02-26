@@ -16,7 +16,7 @@ const CenterChildren = styled.div`
 `
 const StyledContainer = styled.div`
     width: 50%;
-    margin: 15px 30px 0px 150px;
+    margin: 15px 0px 0px 100px;
 `
 
 const StyledSidebar = styled.div`

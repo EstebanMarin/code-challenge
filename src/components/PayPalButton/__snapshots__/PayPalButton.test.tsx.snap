@@ -6,17 +6,17 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-AxjAm edgyKl"
+        class="sc-AxjAm fVXeNo"
       >
         <div
-          class="sc-AxirZ jEousy"
+          class="sc-AxirZ dqdiuJ"
         >
           <img
-            class="sc-AxiKw fuYwcA"
-            src="PayPalButton.png"
+            class="sc-AxiKw bMyFfp"
+            src="icon-paypal-logo.svg"
           />
           <img
-            class="sc-AxiKw fuYwcA"
+            class="sc-AxiKw bMyFfp"
             src="Arrow.png"
           />
         </div>
@@ -25,17 +25,17 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-AxjAm edgyKl"
+      class="sc-AxjAm fVXeNo"
     >
       <div
-        class="sc-AxirZ jEousy"
+        class="sc-AxirZ dqdiuJ"
       >
         <img
-          class="sc-AxiKw fuYwcA"
-          src="PayPalButton.png"
+          class="sc-AxiKw bMyFfp"
+          src="icon-paypal-logo.svg"
         />
         <img
-          class="sc-AxiKw fuYwcA"
+          class="sc-AxiKw bMyFfp"
           src="Arrow.png"
         />
       </div>

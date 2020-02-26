@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const StyledButton = styled.button`
     border: 3px solid black;
     background-color: black;
-    width: 350px;
+    width: 520px;
 `
 const StyledB = styled.p`
    font-size: large;

@@ -14,7 +14,7 @@ const FlexContainer = styled.div`
 `
 
 const StyledImg = styled.img`
-    height: 25px;
+    height: 40px;
     margin: 0px 0px;
 `
 

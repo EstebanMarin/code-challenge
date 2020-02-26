@@ -15,6 +15,7 @@ const StyledP = styled.p`
     font-size: large;
     text-align: center;
 `
+
 const Payment = (): JSX.Element => {
   return (
     <FlexContainer >
