@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
     margin-top: 150px;
 `
 
-const Sidebar = () => {
+const Sidebar = ({ basket, dispatch }: any) => {
   return (
     <StyledDiv>
         <PaymentRight />

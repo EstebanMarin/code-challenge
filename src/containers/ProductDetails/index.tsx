@@ -10,18 +10,19 @@ const Margin = styled.div`
     margin: 30px 0px;
 `
 
-const ProductDetails = (basket: any): React.ReactNode => {
-
+const ProductDetails = ({basket, dispatch}: any): React.ReactNode => {
+    const { data: { totalProductCount, pricing } } = basket
+    console.log(basket)
   return (
     <StyledArticle>
       <Margin>
         <h3>YOUR BAG</h3>
       </Margin>
       <Margin>
-        <Total amount={180} items={1} />
+        <Total amount={pricing?.total} items={totalProductCount} />
       </Margin>
-      <Shoes />
-    <PaymentLeft />
+      <Shoes basket={basket} />
+      <PaymentLeft />
       <Shipping />
     </StyledArticle>
   )
