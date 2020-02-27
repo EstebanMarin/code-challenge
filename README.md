@@ -18,6 +18,8 @@ This is a project created as a reply to the coding challenge for Adidas. Its bui
 > git branch --set-upstream-to=upstream/master master
 > ```
 
+3. Currently we are using `.nvm` to ensure `node` version, however, we are aiming to have local `dev` in a container so devs work with Docker Images.
+
 ## Architecture
 
 With composition and [Components && Containers](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0), the focus is that Developers build their UI using Atoms or single components that composed created either `Templates` or `Containers`. `Composition` is also in the logic, with custom hooks such as `useBasket()`.
