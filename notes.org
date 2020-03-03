@@ -1,20 +1,82 @@
-* AWS
-** Prodcuts used (free tier - domain)
-   - Route 53
-   - S3
-   - IAM
-   - Certificate Manager
-   - Almost Cloud Front
+#+STARTUP: inlineimages
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
+* Coding Challenge Adidas <2020-02-27 Thu> 
+** Ask [100%]
+   - [X] Create a README.md file
+   - [X] Instructions to run APP locally 
+   - [X] Create a build pipeline to deploy a running version in any cloud provider 
+   - [X] A push to master should trigger a deploy
+   - [X] http://emcodingchallenge.net/
+** Current ISSUES
+*** Current look and feel 
+**** Ask.     
+     [[../CodingChallenge.png]]
+    Use Yarn Appropriately  
+**** Delivered
+     [[../Deliverd.png]] 
+*** CORS
+    There is a =CORS= issue in both =dev= and =prod=, that can be solved through the use of a middle server to avoid agent issues
+    Check Bookmark
+** AWS
+*** Products used (free tier - domain)
+    - Route 53
+    - S3
+    - IAM https://adidas-esteban.signin.aws.amazon.com/console
+      - =ROOT= full access barely used 
+      - =travis= no access to console management
+      - =adidas= full access to console management no billing permissions, allocated budget
+    - Certificate Manager
+    - Almost Cloud Front
 ** CI/CD
 *** Configuration
-    https://docs.travis-ci.com/user/deployment/s3/ 
-*** test
-   =yarn test= 
+    - https://docs.travis-ci.com/user/deployment/s3/
+    - [[/Users/emarin/apps/adidas/code-challenge/.travis.yml][Travis File]] 
+*** Test
+    We are aiming to have 3 layers of test
+    1. TDD, type driven development. Aiming to have a well typed app.
+    2. Unit testing logic, like reducers in [[/Users/emarin/apps/adidas/code-challenge/src/containers/Basket/useBasket.tsx][hooks]] 
+    3. Test are taken into account in the deployment process as a hook for the deployment process =yarn test=
+     #+begin_example zsh
+     yarn test
+     #+end_example
 *** Deployment using Travis
     https://travis-ci.org/EstebanMarin/code-challenge
-** Create React-app
-*** Using YARN ?
-    - https://github.com/adidas/adidas-yarn-design-system
+    i DEMO => Correct current test =deploy= to master
+    #+begin_example zsh
+    yarn deploy
+    #+end_example
+** React Application
+*** Styles
+    - Styled components and containing all of the styles in a [[/Users/emarin/apps/adidas/code-challenge/src/utilities/mediaQueries.tsx][single file]]
+    - Global Styles in the main [[/Users/emarin/apps/adidas/code-challenge/src/App.tsx][App]]
+    - Using utility functions and fonts from https://github.com/adidas/adidas-yarn-design-system YARN
+*** Responsiveness
+    - Handling pragmatically the [[/Users/emarin/apps/adidas/code-challenge/src/utilities/mediaQueries.tsx][MediaQueries]], used in templates like [[/Users/emarin/apps/adidas/code-challenge/src/templates/BasicTemplate.tsx][BasicTemplate.tsx]]   
+*** Architecture
+    - Bundle optimized for prod using 
+      #+begin_example zsh
+      yarn build
+      #+end_example
+    - Composing Views starting with small Components (atoms)
+    - Composing Logic like [[/Users/emarin/apps/adidas/code-challenge/src/containers/Basket/useBasket.tsx][useBasket]]  
+** ROAD MAP
+*** Containerize the application
+    Development environment should not depend on =.nvmrc= files, 
+    as well as local dev should be a =docker-compose up= away
+*** Fetch Live data through Express.js server
+    There is a =CORS= issue in both =dev= and =prod=, that can be solved through the use of a  
     - CORS issue https://create-react-app.dev/docs/proxying-api-requests-in-development/
-    - Composing Views
-    - Composing Logic
+    However this server should live in a =S3= or any cloud service
+*** Fix Deployment issues with Travis user
+    Currently there is an issue in the continuous integration pipeline, a strange bug at the end of the pipeline
+    [[../travis_error.png]]
+   
+ #  Local Words:  IAM
+*** Create a HTTP => Container
+    Only supporting the HTTP protocol which shows the site as insecure
+
+#  LocalWords:  CORS useContext js
+*** Ensure immutability of state
+*** Avoid Props Drill-down using =useContext= 
+    Review current try [[/Users/emarin/apps/adidas/code-challenge/src/utilities/CreateContext.tsx][typedUseContext]], whilst ensure no re-renders
+*** Improve CSS architecture

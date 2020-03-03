@@ -20,6 +20,7 @@ const requestInit: RequestInit = {
 
 
 interface State {
+    // TODO update typing of data
   data: any,
 }
 
